@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.gotson</groupId>
+    <groupId>io.github.darkxanter</groupId>
     <artifactId>webp-imageio</artifactId>
     <packaging>jar</packaging>
     <name>webp-imageio</name>
@@ -32,9 +32,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:sejda-pdf/webp-imageio.git</connection>
-        <developerConnection>scm:git:git@github.com:sejda-pdf/webp-imageio.git</developerConnection>
-        <url>scm:git:git@github.com:sejda-pdf/webp-imageio.git</url>
+        <connection>scm:git:git@github.com:darkxanter/webp-imageio.git</connection>
+        <developerConnection>scm:git:git@github.com:darkxanter/webp-imageio.git</developerConnection>
+        <url>scm:git:git@github.com:darkxanter/webp-imageio.git</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -52,9 +52,13 @@
     </properties>
 
     <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
         <snapshotRepository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -231,7 +235,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
