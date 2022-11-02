@@ -238,8 +238,6 @@ public class OSInfo {
             return "Windows";
         } else if (osName.contains("Mac") || osName.contains("Darwin")) {
             return "Mac";
-        } else if (isAlpine()) {
-            return "Linux-Alpine";
         } else if (osName.contains("Linux")) {
             return "Linux";
         } else if (osName.contains("AIX")) {
