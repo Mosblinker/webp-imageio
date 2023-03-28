@@ -385,6 +385,22 @@ JNIEXPORT jint JNICALL Java_com_luciad_imageio_webp_WebPEncoderOptions_getLowMem
 JNIEXPORT void JNICALL Java_com_luciad_imageio_webp_WebPEncoderOptions_setLowMemory
   (JNIEnv *, jclass, jlong, jint);
 
+  /*
+ * Class:     com_luciad_imageio_webp_WebPEncoderOptions
+ * Method:    getUseSharpYUV
+ * Signature: (J)I
+ */
+JNIEXPORT jint JNICALL Java_com_luciad_imageio_webp_WebPEncoderOptions_getUseSharpYUV
+  (JNIEnv *, jclass, jlong);
+
+/*
+ * Class:     com_luciad_imageio_webp_WebPEncoderOptions
+ * Method:    setUseSharpYUV
+ * Signature: (JI)V
+ */
+JNIEXPORT void JNICALL Java_com_luciad_imageio_webp_WebPEncoderOptions_setUseSharpYUV
+  (JNIEnv *, jclass, jlong, jint);
+
 #ifdef __cplusplus
 }
 #endif
