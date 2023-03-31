@@ -177,6 +177,27 @@ public class WebPTest {
         }
     }
 
+    @Test
+    public void testSharpYUV() throws IOException {
+        BufferedImage image = new BufferedImage(256, 256, BufferedImage.TYPE_INT_ARGB);
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        MemoryCacheImageOutputStream imageOut = new MemoryCacheImageOutputStream(out);
+
+        ImageWriter writer = getImageWriter();
+        writer.setOutput(imageOut);
+
+        WebPWriteParam writeParam = (WebPWriteParam) writer.getDefaultWriteParam();
+        writeParam.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
+        writeParam.setCompressionType("Lossless");
+        writeParam.setUseSharpYUV(true);
+
+        writer.write(null, new IIOImage(image, null, null), writeParam);
+
+        imageOut.close();
+        out.close();
+    }
+
+
     private ImageWriter getImageWriter() {
         return findWriter(ImageIO.getImageWritersByMIMEType("image/webp"));
     }
