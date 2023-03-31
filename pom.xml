@@ -5,7 +5,7 @@
     <artifactId>webp-imageio</artifactId>
     <packaging>jar</packaging>
     <name>webp-imageio</name>
-    <version>0.3.2</version>
+    <version>0.3.3-SNAPSHOT</version>
 
     <issueManagement>
         <system>GitHub</system>
@@ -28,7 +28,7 @@
         <connection>scm:git:git@github.com:darkxanter/webp-imageio.git</connection>
         <developerConnection>scm:git:git@github.com:darkxanter/webp-imageio.git</developerConnection>
         <url>scm:git:git@github.com:darkxanter/webp-imageio.git</url>
-        <tag>0.3.2</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
