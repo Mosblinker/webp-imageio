@@ -9,11 +9,11 @@
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/darkxanter/webp-imageio/issues</url>
+        <url>https://github.com/mosblinker/webp-imageio/issues</url>
     </issueManagement>
 
     <description>WebP support for ImageIO, now with animated WebP support</description>
-    <url>https://github.com/darkxanter/webp-imageio</url>
+    <url>https://github.com/mosblinker/webp-imageio</url>
 
     <licenses>
         <license>
@@ -25,9 +25,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:darkxanter/webp-imageio.git</connection>
-        <developerConnection>scm:git:git@github.com:darkxanter/webp-imageio.git</developerConnection>
-        <url>scm:git:git@github.com:darkxanter/webp-imageio.git</url>
+        <connection>scm:git:git@github.com:mosblinker/webp-imageio.git</connection>
+        <developerConnection>scm:git:git@github.com:mosblinker/webp-imageio.git</developerConnection>
+        <url>scm:git:git@github.com:mosblinker/webp-imageio.git</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -36,6 +36,11 @@
             <id>ediweissmann</id>
             <name>Edi Weissmann</name>
             <email>edi.weissmann@gmail.com</email>
+        </developer>
+        <developer>
+            <id>mosblinker</id>
+            <name>Milo Steier</name>
+            <email>msteier2.0@gmail.com</email>
         </developer>
     </developers>
 
